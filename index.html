@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Investment Calculator</title>
+</head>
+
+<body>
+
+    <h1>Investment Calculator</h1>
+
+    <label for="initial">Initial Investment:</label>
+    <input type="number" id="initial" value=""><br><br>
+
+    <label for="month">Monthly Contribution:</label>
+    <input type="number" id="month" value=""><br><br>
+
+    <label for="year">Length of Time (Years):</label>
+    <input type="number" id="year" value=""><br><br>
+
+    <label for="rate">Estimated Interest Rate In Percent</label>
+    <input type="number" id="rate" value=""><br><br>
+
+    <div style="display: flex; justify-content: center;">
+        <button onclick="calculate()">Calculate</button>
+    </div>
+
+    <h2>Investment Results</h2>
+    <p>This calculates investment growth using compound interest. It assumes annual interest compounding and shows how savings grow over time in a table.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Years</th>
+                <th>Investment Value (5.00%)</th>
+                <th>Total Contributions</th>
+            </tr>
+        </thead>
+        <tbody id="result"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
