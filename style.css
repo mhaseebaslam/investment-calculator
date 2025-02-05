@@ -53,3 +53,24 @@ td {
 tr:hover td {
     background-color: #e9ecef;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    input[type="number"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
