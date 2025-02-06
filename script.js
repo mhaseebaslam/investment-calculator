@@ -16,8 +16,9 @@ function calculate() {
     for (let i = 0; i < year; i++) {
         if (i > 0) {
             // The investment value is calculated by adding the monthly contribution to the investment value of the previous year and then multiplying the sum by the interest rate.
-            // The total contributions are calculated by adding the monthly contribution to the total contributions of the previous year.
             investment = (investment + month * 12) * (1 + rate);
+
+            // The total contributions are calculated by adding the monthly contribution to the total contributions of the previous year.
             totalContributions = (totalContributions + month * 12);
         }
 
