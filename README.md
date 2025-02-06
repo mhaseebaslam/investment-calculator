@@ -20,7 +20,7 @@ This repository has a browser-based tool designed to help users calculate the gr
 
 2. **Total Contributions Calculation**: The total contributions are updated each year using the following formula:
 
-   `totalContributions = totalContributions + (month × 12)`
+   `totalContributions = totalContributions + (month * 12)`
 
    Explanation:
    - `totalContributions`: The cumulative amount of money contributed over the years.
@@ -37,11 +37,11 @@ This repository has a browser-based tool designed to help users calculate the gr
 - **Currency Support**: Add support for multiple currencies and formatting.
 - **Dark Mode**: Implement a dark mode for better usability in low-light environments.
 
-## 📬 Feedback
+## Feedback
 
 If you have any suggestions or feedback, feel free to open an issue or submit a pull request. Contributions are welcome!
 
-## 📄 License
+## License
 
 This project is licensed under the **[MIT License](LICENSE)**. You are free to use, modify, and distribute this code as per the license.
 
