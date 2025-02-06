@@ -1,3 +1,4 @@
+// this function is called when the user clicks the "Calculate" button.
 function calculate() {
     const initial = Number(document.getElementById('initial').value);
     const month = Number(document.getElementById('month').value);
