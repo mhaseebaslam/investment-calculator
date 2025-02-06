@@ -1,31 +1,32 @@
 # Investment Calculator
 
-The **Compound Interest Calculator** is a browser-based tool designed to help users calculate the growth of their investments over time using compound interest. Whether you're planning for retirement, saving for a big purchase, or just curious about how your money can grow, this tool provides a clear and interactive way to visualize your investment's potential. With simple input fields and a detailed results table, users can easily understand how their initial investment and monthly contributions grow annually with compound interest.
+This repository has a browser-based tool designed to help users calculate the growth of their investments over time using compound interest. With simple input fields and a detailed results table, users can easily understand how their initial investment and monthly contributions grow annually with compound interest.
 
-The tool assumes that interest is compounded annually at the end of each year, and it displays both the investment value with interest and the total contributions made over the years.
+## Formulas Used in the JavaScript Code
 
-## Formula Used
+1. **Investment Value Calculation**: The investment value is updated each year based on the following formula:
 
-The tool uses the **compound interest formula** to calculate the investment growth. Here's how it works:
+   `investment = (investment + month * 12) * (1 + rate)`
 
-1. **Annual Contribution**:  
-   `Annual Contribution = Monthly Contribution × 12`
+   Explanation:
+   - `investment`: The current value of the investment.
+   - `month * 12`: The total annual contribution (monthly contribution multiplied by 12 months).
+   - `rate`: The annual interest rate (expressed as a decimal, e.g., 5% = 0.05).
+   - `(1 + rate)`: The growth factor due to the interest rate.
 
-2. **Yearly Growth**:  
-   `Investment Value = (Previous Balance + Annual Contribution) × (1 + Interest Rate)`
+   This formula calculates the new investment value by:
+   1. Adding the annual contribution (`month * 12`) to the current investment value.
+   2. Applying the interest rate to the total amount.
 
-   Where:
-   - `Previous Balance` is the investment value at the end of the previous year.
-   - `Interest Rate` is the annual interest rate in decimal form (e.g., 5% = 0.05).
+2. **Total Contributions Calculation**: The total contributions are updated each year using the following formula:
 
-3. **Total Contributions**:  
-   `Total Contributions = Initial Investment + (Monthly Contribution × 12 × Number of Years)`
+   `totalContributions = totalContributions + (month × 12)`
 
-## Technologies Used
+   Explanation:
+   - `totalContributions`: The cumulative amount of money contributed over the years.
+   - `month * 12`: The total annual contribution (monthly contribution multiplied by 12 months).
 
-- **HTML5**: For structuring the input fields and result table.
-- **CSS3**: For styling the tool, making it responsive and visually appealing.
-- **JavaScript**: For handling calculations, updating the table dynamically, and ensuring interactivity.
+   This formula simply adds the annual contribution to the running total of contributions.
 
 ## Future Improvements
 
@@ -36,6 +37,14 @@ The tool uses the **compound interest formula** to calculate the investment grow
 - **Currency Support**: Add support for multiple currencies and formatting.
 - **Dark Mode**: Implement a dark mode for better usability in low-light environments.
 
-## License
+## 📬 Feedback
 
-This project is licensed under the [MIT License](LICENSE).
+If you have any suggestions or feedback, feel free to open an issue or submit a pull request. Contributions are welcome!
+
+## 📄 License
+
+This project is licensed under the **[MIT License](LICENSE)**. You are free to use, modify, and distribute this code as per the license.
+
+---
+
+Made with ❤️ by [Muhammad Haseeb](https://github.com/mhaseebaslam).
