@@ -28,6 +28,10 @@ This repository has a browser-based tool designed to help users calculate the gr
 
    This formula simply adds the annual contribution to the running total of contributions.
 
+## Live Demo
+
+Check out the live preview by [click here](https://mhaseebaslam.github.io/investment-calculator/)
+
 ## Future Improvements
 
 - **Additional Compounding Frequencies**: Allow users to choose between annual, semi-annual, quarterly, or monthly compounding.
