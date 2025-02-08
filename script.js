@@ -1,4 +1,4 @@
-// this function is called when the user clicks the "Calculate" button.
+// This function is called when the user clicks the "Calculate" button.
 function calculate() {
   const initial = Number(document.getElementById("initial").value);
   const month = Number(document.getElementById("month").value);
@@ -14,11 +14,13 @@ function calculate() {
 
   // Create a loop that runs for the number of years specified by the user.
   for (let i = 0; i < year; i++) {
-    // The investment value is calculated by adding the monthly contribution to the investment value of the previous year and then multiplying the sum by the interest rate.
-    investment = (investment + month * 12) * (1 + rate);
+    if (i > 0) {
+      /* The investment value is calculated by adding the monthly contribution to the investment value of the previous year and then multiplying the sum by the interest rate.*/
+      investment = (investment + month * 12) * (1 + rate);
 
-    // The total contributions are calculated by adding the monthly contribution to the total contributions of the previous year.
-    totalContributions = totalContributions + month * 12;
+      /* The total contributions are calculated by adding the monthly contribution to the total contributions of the previous year.*/
+      totalContributions = totalContributions + month * 12;
+    }
 
     // Create a new row in the table.
     const row = result.insertRow();
