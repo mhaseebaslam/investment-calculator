@@ -10,7 +10,7 @@ function calculate() {
   let investment = initial;
   let totalContributions = initial;
 
-  // Create a loop that runs for the number of years specified by the user.
+  // Create a loop that calculates the investment for each year.
   for (let i = 0; i < year; i++) {
     if (i > 0) {
       investment = (investment + month * 12) * (1 + rate);
