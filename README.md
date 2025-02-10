@@ -76,6 +76,14 @@ Contributing to this project is easy and we appreciate your help! Follow these s
 
    - Replace `your-username` with your GitHub username.
 
+   For example:
+
+     ```bash
+     git clone https://github.com/mhaseebaslam/investment-calculator.git
+     ```
+
+   - Replace `mhaseebaslam` with your GitHub username.
+
 3. **Create a New Branch**:
    - Navigate to the project directory:
 
