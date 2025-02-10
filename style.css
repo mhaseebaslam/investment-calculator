@@ -1,76 +1,77 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ecf0f1;
-    padding-left: 15%;
-    padding-right: 15%;
-    text-transform: capitalize;
+  font-family: Arial, sans-serif;
+  background-color: #ecf0f1;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-transform: capitalize;
 }
 
 /* Input Section Styles */
 input[type="number"] {
-    width: -webkit-fill-available;
-    border: 2px solid #007bce;
-    border-radius: 5px;
-    font-size: 16px;
-    padding: 10px;
+  width: -webkit-fill-available;
+  border: 2px solid #007bce;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
 }
 
 /* Button Styles */
 button {
-    background-color: #3498db;
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 button:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
 
 /* Table Styles */
 table {
-    width: 100%;
-    margin-top: 20px;
-    background: white;
-    border-radius: 5px;
-    text-align: left;
+  width: 100%;
+  margin-top: 20px;
+  background: white;
+  border-radius: 5px;
+  text-align: left;
 }
 
 th {
-    background-color: #3498db;
-    color: white;
-    padding: 12px;
+  background-color: #3498db;
+  color: white;
+  padding: 12px;
 }
 
 td {
-    padding: 12px;
-    background-color: #f8f9fa;
+  padding: 12px;
+  background-color: #f8f9fa;
 }
 
 tr:hover td {
-    background-color: #e9ecef;
+  background-color: #e9ecef;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    body {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-    input[type="number"] {
-        font-size: 14px;
-        padding: 8px;
-    }
+  input[type="number"] {
+    font-size: 14px;
+    padding: 8px;
+  }
 
-    button {
-        padding: 10px 20px;
-    }
+  button {
+    padding: 10px 20px;
+  }
 
-    th, td {
-        padding: 10px;
-    }
+  th,
+  td {
+    padding: 10px;
+  }
 }
